@@ -1,0 +1,204 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+/* Layout Structure */
+header {
+  background: orange;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: orange;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #ffe5b4;
+  color: #e69500;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* Decoration & Colour */
+button, .btn {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover, .btn:hover {
+  background: #e69500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid orange;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  main {
+    max-width: 95vw;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  img {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header, footer {
+    padding: 10px 0;
+  }
+
+  nav ul {
+    gap: 6px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button, .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  input, textarea {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
